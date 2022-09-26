@@ -107,11 +107,6 @@ const handleBuy = useMutation(async () => {
   } catch (error) {}
 });
 
-
-
-  if(loading) {
-    return <Loading />
-  }
   return (
     
     <div className="container-fluid sectionPayment">

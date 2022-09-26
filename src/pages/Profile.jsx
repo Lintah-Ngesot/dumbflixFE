@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import {Container, Row, Col, Card, Button, Badge} from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom';
-import profileUser from '../Images/profil.jpg'
+import profileUser from '../Images/profil.jfif'
 import {UserContext} from '../context/UserContext'
 
 

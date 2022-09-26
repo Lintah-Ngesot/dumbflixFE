@@ -5,7 +5,7 @@ import ModalRegister from "./auth/ModalRegister";
 import { Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import userProfile from "../Images/profil.jpg";
+import userProfile from "../Images/profil.jfif";
 import { Dropdown } from "react-bootstrap";
 import {FaUser, FaMoneyCheckAlt, FaSignOutAlt, FaVideo} from 'react-icons/fa'
 import {UserContext} from '../context/UserContext'

@@ -39,13 +39,6 @@ function Payment() {
     }
   );
 
-  useEffect(() => {
-    setIsLoading(true)
-
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1500)
-  }, [])
 
 
 

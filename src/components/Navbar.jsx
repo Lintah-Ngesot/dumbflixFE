@@ -3,7 +3,7 @@ import Logo from "../Images/logo.png";
 import ModalRegister from "./auth/ModalRegister";
 import { Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import userProfile from "../Images/profil.jpg";
+import userProfile from "../Images/profil.jfif";
 import { Dropdown } from "react-bootstrap";
 import { FaUser, FaMoneyCheckAlt, FaSignOutAlt, FaVideo } from "react-icons/fa";
 import { TiThList } from "react-icons/ti";

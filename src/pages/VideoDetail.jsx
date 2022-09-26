@@ -3,7 +3,6 @@ import episode from '../Images/episode.jpg'
 import {useParams } from "react-router-dom";
 import {API} from '../config/api'
 import { useQuery } from "react-query";
-import Loading from '../components/Loading'
 import {UserContext} from '../context/UserContext'
 
 function VideoDetail() {
@@ -16,19 +15,6 @@ function VideoDetail() {
     return response.data.data
   })
 
-  const [isLoading, setIsLoading] = useState(false)
-
-  useEffect(() => {
-    setIsLoading(true)
-
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1500)
-  }, [])
-
-  if(isLoading) {
-    return <Loading />
-  }
 
   return (
     <>

@@ -2,7 +2,6 @@ import React, {useContext, useState, useEffect} from "react";
 import { Form, Button } from "react-bootstrap";
 import {useMutation, useQuery} from 'react-query'
 import {API} from '../config/api'
-import Loading from '../components/Loading'
 import {RiAttachmentFill} from 'react-icons/ri';
 import {useNavigate} from 'react-router-dom';
 import {UserContext} from '../context/UserContext'
@@ -12,85 +11,12 @@ function Payment() {
   const title = "Be Premium";
   document.title = "Dumbflix | " + title;
 
-  const [loading, setIsLoading] = useState(false)
 
   const [state] = useContext(UserContext);
   console.log(state);
 
   let Navigate = useNavigate();
 
-
-// useEffect(() => {
-//   //change this to the script source you want to load, for example this is snap.js sandbox env
-//   const midtransScriptUrl = "https://app.sandbox.midtrans.com/snap/snap.js";
-//   //change this according to your client-key
-//   const myMidtransClientKey = "SB-Mid-client-xJ2Vxf8-vRImEHYf";
-
-//   let scriptTag = document.createElement("script");
-//   scriptTag.src = midtransScriptUrl;
-//   // optional if you want to set script attribute
-//   // for example snap.js have data-client-key attribute
-//   scriptTag.setAttribute("data-client-key", myMidtransClientKey);
-
-//   document.body.appendChild(scriptTag);
-//   return () => {
-//     document.body.removeChild(scriptTag);
-//   };
-// }, []);
-
-// const handleBuy = useMutation(async (e) => {
-//   try {
-//     e.preventDefault();
-
-//     const config = {
-//       headers: {
-//         method: "POST",
-//         headers: {
-//           "Content-type": "application/json",
-//           Authorization: `Bearer ${localStorage.token}`
-//         },
-//       },
-//     };
-
-//     const response = await API.post("/transaction", config);
-//     console.log("ini responnse", response);
-
-//     // Create variabel for store token payment from response here ...
-//     const token = response.data.data.token;
-//     console.log('testingggg : ', state.payload.token)
-
-//     // Init Snap for display payment page with token here ...
-//     window.snap.pay(token, {
-//       onSuccess: function (result) {
-//         /* You may add your own implementation here */
-//         navigate("/profile");
-//       },
-//       onPending: function (result) {
-//         /* You may add your own implementation here */
-//         navigate("/payment");
-//       },
-//       onError: function (result) {
-//         /* You may add your own implementation here */
-//       },
-//       onClose: function () {
-//         /* You may add your own implementation here */
-//         alert("You closed the popup without finishing the payment");
-//       },
-//     });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });
-
-// useEffect(() => {
-//   setIsLoading(true)
-
-//   setTimeout(() => {
-//     setIsLoading(false)
-//   },1500)
-
-//   return;
-// }, [])
 
 
 
